@@ -1,9 +1,9 @@
-# VC Prática 5
+# VC Práctica 5
 #### Luis Martín Pérez
 
 ## Parte 1: Entrenamiento de una red para detectar emociones
 
-Esto se hizo con transfer learning, cogiendo como modelo de base EficientNet. El resultado final no fue muy bueno, así
+Esto se hizo con transfer learning, cogiendo como modelo de base EfficientNet. El resultado final no fue muy bueno, así
 que se optó por usar simplemente el modelo que `Deepface` incluye por defecto para detección de emociones. Los resultados
 tampoco son mucho mejores, sin embargo, parece tener mejor precisión con las pruebas que hice.
 
@@ -18,14 +18,14 @@ La solución a este ejercicio se divide en tres partes fundamentales:
 Cada filtro consiste en superponer una imagen con un canal alfa sobre la imagen del vídeo.
 A continuación se muestra un ejemplo de cada filtro.
 
-| Happy | Sad | Angry | Afraid | Surprised |
-|-------|-----|-------|--------|-----------|
-|       |     |       |        |           |
+| Happy                                    | Sad                                    | Angry                                    | Afraid                                  | Surprised                                   |
+|------------------------------------------|----------------------------------------|------------------------------------------|-----------------------------------------|---------------------------------------------|
+| ![](results/happy_filter_screenshot.png) | ![](results/sad_filter_screenshot.png) | ![](results/angry_filter_screenshot.png) | ![](results/fear_filter_screenshot.png) | ![](results/surprise_filter_screenshot.png) |
 
 ## Parte 2: Crear un filtro de cara de temática libre
 
-Para esta parte, se tomó la temática de matrix. La inspiración surgió al dibujar cada punto carácterístico de la cara dado
-por `mediapipe`, empezó siendo para depurar y ver lo que podía hacer pero me recordó a los modelos 3D de videojuegos antiguos,
+Para esta parte, se tomó la temática de matrix. La inspiración surgió al dibujar cada punto característico de la cara dado
+por `mediapipe`, empezó siendo para depurar y ver lo que podía hacer, pero me recordó a los modelos 3D de videojuegos antiguos,
 basados en polígonos de baja resolución.
 
 Se muestra un ejemplo:
